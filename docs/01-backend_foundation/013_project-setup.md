@@ -24,67 +24,71 @@ To avoid repetitive code and ensure consistent responses and error handling acro
 
   The `asyncHandler` solves this by wrapping your async functions and automatically catching any errors, passing them to Express's error-handling middleware. Here’s a detailed breakdown of how it works:
 
-> **How asyncHandler Works (Step-by-Step):**
-> 
-> - You're passing your **actual handler function** (the async function) into `asyncHandler`.
-> - `asyncHandler` returns a **wrapped function** that Express will actually call.
-> - So now, to Express, your handler looks like:
->   ```js
->   (req, res, next) => {
->     Promise.resolve(
->       yourAsyncFunction(req, res)
->     ).catch((err) => next(err));
->   }
->   ```
-> - **Step 1:** A POST request comes in (e.g., `POST /register`).
-> - **Step 2:** Express calls your route handler: `registerUser(req, res, next);`
-> - **Step 3:** But `registerUser` is not your original async function—it's the wrapped version from `asyncHandler`.
-> - **Step 4:** Inside `asyncHandler`, this code runs:
->   ```js
->   Promise.resolve(requestHandler(req, res, next))
->     .catch((err) => next(err));
->   ```
-> - If your async function throws an error, it goes to `.catch(...)` and then calls `next(err)`, which triggers Express’s error-handling middleware.
-> - **If no error:** The response is sent as usual.
-> - **If error:** The error is sent to your global error handler.
-> 
-> **Visual Summary:**
-> ```
-> POST /register
->     ↓
-> Express finds .post(registerUser)
->     ↓
-> registerUser = asyncHandler(yourAsyncFunction)
->     ↓
-> asyncHandler returns a new function (req, res, next)
->     ↓
-> That function runs: Promise.resolve(yourAsyncFunction).catch(next)
->     ↓
-> If OK: res.status(200) is sent
-> If error: next(err) is called
-> ```
-> 
-> **The Magic of asyncHandler:**  
-> Without it, you'd write this every time:
-> ```js
-> router.post("/register", async (req, res, next) => {
->   try {
->     ...
->   } catch (err) {
->     next(err);
->   }
-> });
-> ```
-> But now, you just write clean async code:
-> ```js
-> const registerUser = asyncHandler(async (req, res) => {
->   ...
-> });
-> ```
-> 
 
-> **Analogy:**  
-> Think of `asyncHandler` as a safety net under a tightrope walker. If you fall (an error happens), the net (asyncHandler) catches you and safely hands you over to the rescue team (Express error handler).
+
+<details>
+<summary>💡 How `asyncHandler` Works (Step-by-Step)</summary>
+ 
+ - You're passing your **actual handler function** (the async function) into `asyncHandler`.
+ - `asyncHandler` returns a **wrapped function** that Express will actually call.
+ - So now, to Express, your handler looks like:
+   ```js
+   (req, res, next) => {
+     Promise.resolve(
+       yourAsyncFunction(req, res)
+     ).catch((err) => next(err));
+   }
+   ```
+ - **Step 1:** A POST request comes in (e.g., `POST /register`).
+- **Step 2:** Express calls your route handler: `registerUser(req, res, next);`
+ - **Step 3:** But `registerUser` is not your original async function—it's the wrapped version from `asyncHandler`.
+ - **Step 4:** Inside `asyncHandler`, this code runs:
+   ```js
+   Promise.resolve(requestHandler(req, res, next))
+     .catch((err) => next(err));
+   ```
+ - If your async function throws an error, it goes to `.catch(...)` and then calls `next(err)`, which triggers Express’s error-handling middleware.
+ - **If no error:** The response is sent as usual.
+ - **If error:** The error is sent to your global error handler.
+ 
+ **Visual Summary:**
+ ```
+ POST /register
+     ↓
+ Express finds .post(registerUser)
+     ↓
+ registerUser = asyncHandler(yourAsyncFunction)
+     ↓
+ asyncHandler returns a new function (req, res, next)
+     ↓
+ That function runs: Promise.resolve(yourAsyncFunction).catch(next)
+     ↓
+ If OK: res.status(200) is sent
+ If error: next(err) is called
+ ```
+ 
+ **The Magic of asyncHandler:**  
+ Without it, you'd write this every time:
+ ```js
+ router.post("/register", async (req, res, next) => {
+   try {
+     ...
+   } catch (err) {
+     next(err);
+   }
+ });
+ ```
+But now, you just write clean async code:
+```js
+ const registerUser = asyncHandler(async (req, res) => {
+   ...
+ });
+ ```
+ 
+
+**Analogy:**  
+Think of `asyncHandler` as a safety net under a tightrope walker. If you fall (an error happens), the net (asyncHandler) catches you and safely hands you over to the rescue team (Express error handler).
+</details>
 
 ---
 

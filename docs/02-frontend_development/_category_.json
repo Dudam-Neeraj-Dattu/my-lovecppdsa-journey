@@ -1,0 +1,9 @@
+{
+  "label": "Frontend Architecture & State",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "title": "Forging the User Experience: A Deep Dive into Frontend Architecture and State Management",
+    "description": "The creation of the LoveCppDSA frontend was a journey from foundational single-page application principles to sophisticated state management and robust error handling. This section narrates the key architectural decisions that shaped an interactive, resilient, and maintainable user interface."
+  }
+}
