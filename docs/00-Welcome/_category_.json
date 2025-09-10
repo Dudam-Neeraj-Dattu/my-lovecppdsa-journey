@@ -1,0 +1,8 @@
+{
+  "label": "Welcome",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "This journey is divided into several sections and subsections for reading purposes. Before we dive in, I want to share my motivation for developing this application. Despite there being many platforms to practice Data Structures and Algorithms, I felt a need for a tool that was more integrated with a specific learning path, fostering a sense of community and providing modern, AI-powered assistance. This document details that journey."
+  }
+}
