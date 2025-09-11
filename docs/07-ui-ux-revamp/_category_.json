@@ -1,0 +1,9 @@
+{
+   "label": "The Great UI/UX Revamp",
+   "position": 8,
+   "link": {
+      "type": "generated-index",
+      "title": "Architecting a Modern UI: The Sidebar Revamp",
+      "description": "After implementing several core features, a major UI/UX refactor was undertaken to create a more scalable and intuitive navigation system. This section details the architectural decision to move from a simple top navbar to a sophisticated, responsive sidebar for authenticated users, a change that was critical for the application's long-term usability."
+   }
+}
