@@ -1,0 +1,9 @@
+{
+  "label": "Section 8: Real-Time Chat with Socket.IO",
+  "position": 9,
+  "link": {
+    "type": "generated-index",
+    "title": "Engineering a Real-Time Chat System with Socket.IO",
+    "description": "This section details the implementation of the project's most complex feature: a full-stack, real-time chat system. The journey evolved from building a standard request-response web application to engineering a sophisticated, event-driven platform using WebSockets via the Socket.IO library. The design decisions made in previous refactors, such as the `isPublic` and `isVerified` flags, proved to be a crucial and secure foundation for this new layer of community interaction."
+  }
+}
