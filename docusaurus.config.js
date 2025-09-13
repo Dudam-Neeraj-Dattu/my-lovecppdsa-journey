@@ -23,7 +23,7 @@ const config = {
    url: 'https://dudam-neeraj-dattu.github.io',
    // Set the /<baseUrl>/ pathname under which your site is served
    // For GitHub pages deployment, it is often '/<projectName>/'
-   baseUrl: '/my-lovecppdsa-journey/docs/',
+   baseUrl: '/my-lovecppdsa-journey/',
 
    // GitHub pages deployment config.
    // If you aren't using GitHub pages, you don't need these.
