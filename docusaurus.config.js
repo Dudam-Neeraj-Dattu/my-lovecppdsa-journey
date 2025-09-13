@@ -75,6 +75,7 @@ const config = {
                   label: 'My Journey',
                },
                { to: 'https://dudam-neeraj-dattu.github.io/Personal-Portfolio/', label: 'My Portfolio', position: 'left' },
+               { to: 'https://www.buymeacoffee.com/ilovecppdsa', label: 'Sponsor', position: 'left' },
                {
                   href: 'https://github.com/Dudam-Neeraj-Dattu/my-lovecppdsa-journey',
                   label: 'GitHub',
