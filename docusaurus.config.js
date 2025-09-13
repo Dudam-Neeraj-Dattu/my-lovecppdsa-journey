@@ -20,15 +20,15 @@ const config = {
    },
 
    // Set the production url of your site here
-   url: 'https://your-docusaurus-site.example.com',
+   url: 'https://dudam-neeraj-dattu.github.io',
    // Set the /<baseUrl>/ pathname under which your site is served
    // For GitHub pages deployment, it is often '/<projectName>/'
-   baseUrl: '/',
+   baseUrl: '/my-lovecppdsa-journey/',
 
    // GitHub pages deployment config.
    // If you aren't using GitHub pages, you don't need these.
    organizationName: 'Dudam-Neeraj-Dattu', // Usually your GitHub org/user name.
-   projectName: 'LoveCpp-DSA', // Usually your repo name.
+   projectName: 'my-lovecppdsa-journey', // Usually your repo name.
 
    onBrokenLinks: 'throw',
    onBrokenMarkdownLinks: 'warn',
