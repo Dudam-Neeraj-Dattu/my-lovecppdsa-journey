@@ -47,6 +47,9 @@ const config = {
          /** @type {import('@docusaurus/preset-classic').Options} */
          ({
             docs: {
+               // routeBasePath: '/', --- IGNORE ---
+               routeBasePath: '/docs',
+               // Please change this to your repo.
                sidebarPath: './sidebars.js',
             },
             theme: {
