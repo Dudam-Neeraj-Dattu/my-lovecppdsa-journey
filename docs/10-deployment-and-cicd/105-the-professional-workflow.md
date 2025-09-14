@@ -4,7 +4,7 @@ title: The Professional Workflow & The Deployment Gauntlet
 ---
 
 
-# 10.4 The Professional Deployment Workflow
+# 10.5 The Professional Deployment Workflow
 
 The failure of the on-server build was the final proof for me that a professional workflow was necessary. I realized I needed to **build the Docker images on my powerful local PC** and then **push them to a container registry (like Docker Hub)**. My small EC2 server's only job would be to *download* and *run* these pre-built, finished images.
 

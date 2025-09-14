@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Final Folder Structure
 
-The **LoveCppDSA** project is organized as a modern monorepo, separating backend and frontend codebases for clarity, scalability, and ease of maintenance. This structure supports robust CI/CD, containerization, and efficient team collaboration.
+The **LoveCppDSA** project is organized as a modern monorepo, separating backend and frontend codebases for clarity, scalability, and ease of maintenance. This structure supports robust CI/CD, containerization, and development.
 
 ---
 
@@ -253,4 +253,4 @@ loveCppDsa_Frontend/
 
 ---
 
-This structure ensures clear separation of concerns, supports containerized deployment, and makes it easy for contributors to navigate and extend the
+This structure ensures clear separation of concerns, supports containerized deployment, and makes it easy for developing and to navigate and extend the features.

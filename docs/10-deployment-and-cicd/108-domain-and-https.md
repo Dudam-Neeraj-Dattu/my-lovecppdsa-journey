@@ -3,7 +3,7 @@ sidebar_position: 7
 title: The Domain Expansion
 ---
 
-# 10.6 The Final Mile: Domain, HTTPS, and a Live Application
+# 10.8 The Final Mile: Domain, HTTPS, and a Live Application
 
 The final step in this deployment journey was transitioning the application from a raw IP address to a professional, secure domain: **`https://lovecppdsa.com`**. This process involved deep dives into DNS, cloud security, and a marathon 13-hour debugging session to solve a series of classic production networking issues. Every detail, challenge, and fix along the way contributed to a much deeper understanding of modern web deployment.
 

@@ -4,7 +4,7 @@ title: Nginx, HTTPS, and the Final Deployment
 ---
 
 
-# 10.5 The Pre-Final Mile: Nginx Reverse Proxy, HTTPS, and a Live Application
+# 10.6 The Pre-Final Mile: Nginx Reverse Proxy, HTTPS, and a Live Application
 
 With my application running on the server, the final challenge was to solve a series of complex networking and security issues that are common in production environments. This is where I learned the true value of a reverse proxy and HTTPS.
 

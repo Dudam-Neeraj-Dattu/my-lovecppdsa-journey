@@ -4,7 +4,7 @@ sidebar_position: 6
 title: The Final Frontier - A Journey Through Production Deployment & CI/CD
 ---
 
-# 10.5 The Deployment Gauntlet: From Manual Steps to Full Automation
+# 10.7 The Deployment Gauntlet: From Manual Steps to Full Automation
 
 The final phase of the project was its most challenging and transformative: taking the application from a local environment to a live, production-ready product on the internet. This section chronicles the hands-on journey through containerization, cloud infrastructure, and full automation, a critical skill set that distinguishes a portfolio project from a professional-grade system.
 

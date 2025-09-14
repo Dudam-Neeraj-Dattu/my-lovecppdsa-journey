@@ -7,7 +7,7 @@ title: SPA Paradigm & Initial Setup
 
 When I started building the frontend for LoveCppDSA, I drew on my experience from simpler projects, but I knew that a more complex, authentication-driven application would require a robust architecture. Choosing the Single-Page Application (SPA) model was fundamental. Unlike traditional multi-page apps that reload the entire page for every interaction, an SPA loads a single HTML shell and dynamically updates its content, giving users a fast, seamless experience—much like a desktop app.
 
-To achieve this, I relied on two core libraries:
+To achieve this, I relied on two core libraries: `react-router-dom` and `axios`
 
 ---
 

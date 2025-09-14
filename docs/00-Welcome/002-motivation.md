@@ -12,7 +12,7 @@ Throughout this process, I faced two persistent challenges:
 1. **Tracking Progress:** With hundreds of problems spread across various topics, it was difficult to keep track of what I had completed and what remained.
 2. **Finding Community:** I often found myself scrolling through YouTube comments, where people searching for fellow learners to discuss problems with—a study buddy on the same journey.
 
-After six months of daily DSA practice, and a brief break for my spring semester, I realized I could address these very challenges. I had always wanted to build a real-world application that solved a genuine problem, and this was my opportunity. That’s when the idea for **LoveCppDSA** was born.
+After six months of daily DSA practice, and a brief break after my spring semester, I realized I could address these very challenges. I had always wanted to build a real-world application that solved a genuine problem, and this was my opportunity. That’s when the idea for **LoveCppDSA** was born.
 
 Here is the original synopsis I wrote down when the idea first came to me:
 
@@ -26,6 +26,6 @@ Here is the original synopsis I wrote down when the idea first came to me:
 >
 > this application can go to next level by allowing users to chat and combine with other use and do as a pair, like it develops a commuity of people who are at the same level.
 >
-> this is just the initial thought of the project, more features can be added later based on the flow of the project.
+> this is just the initial thought of the project, more or less features can be added or deleted later based on the flow of the project.
 
 That initial thought grew into the full-featured, AI-powered, real-time platform you see today.
