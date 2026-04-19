@@ -1,0 +1,9 @@
+{
+  "label": "Section 1: Backend Foundation",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "title": "From Idea to API: Architecting the Backend Foundation",
+    "description": "The journey of the LoveCppDSA application began not with a complex business plan, but with a developer's personal need: to create a dynamic and interactive way to track progress through the popular Love Babbar Data Structures and Algorithms (DSA) YouTube playlist. This section details the critical, foundational decisions made in the backend architecture, a process that transformed a simple idea into a scalable and robust platform."
+  }
+}

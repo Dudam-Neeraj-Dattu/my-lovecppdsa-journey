@@ -1,0 +1,9 @@
+{
+  "label": "Section 6: Profile Features & DB Refactor",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "title": "The Great Refactor: Evolving the Database for Security & Scalability",
+    "description": "Later in the development cycle, after many core features were already functional, a major database refactor was undertaken. Although such changes are often avoided on a working system, this step was taken to improve maintainability and product quality."
+  }
+}

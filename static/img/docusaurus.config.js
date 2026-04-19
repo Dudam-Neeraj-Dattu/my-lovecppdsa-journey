@@ -29,8 +29,14 @@ const config = {
    // If you aren't using GitHub pages, you don't need these.
    organizationName: 'Dudam-Neeraj-Dattu', // Usually your GitHub org/user name.
    projectName: 'my-lovecppdsa-journey', // Usually your repo name.
-
+   trailingSlash : false,
    onBrokenLinks: 'throw',
+    markdown: {
+     format: 'detect',
+     hooks: {
+       onBrokenMarkdownLinks: 'warn',
+     },
+   },
 
    // Even if you don't use internationalization, you can use this field to set
    // useful metadata like html lang. For example, if your site is Chinese, you
@@ -47,25 +53,6 @@ const config = {
          ({
             docs: {
                sidebarPath: './sidebars.js',
-               // Please change this to your repo.
-               // Remove this to remove the "edit this page" links.
-               editUrl:
-                  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-            },
-            blog: {
-               showReadingTime: true,
-               feedOptions: {
-                  type: ['rss', 'atom'],
-                  xslt: true,
-               },
-               // Please change this to your repo.
-               // Remove this to remove the "edit this page" links.
-               editUrl:
-                  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-               // Useful options to enforce blogging best practices
-               onInlineTags: 'warn',
-               onInlineAuthors: 'warn',
-               onUntruncatedBlogPosts: 'warn',
             },
             theme: {
                customCss: './src/css/custom.css',
@@ -79,9 +66,6 @@ const config = {
       ({
          // Replace with your project's social card
          image: 'img/docusaurus-social-card.jpg',
-         colorMode: {
-            respectPrefersColorScheme: true,
-         },
          navbar: {
             title: 'LoveCpp-DSA',
             logo: {

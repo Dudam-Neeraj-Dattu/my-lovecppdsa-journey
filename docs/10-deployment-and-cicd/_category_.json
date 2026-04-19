@@ -1,0 +1,9 @@
+{
+  "label": "Section 10: Deployment & CI/CD",
+  "position": 11,
+  "link": {
+    "type": "generated-index",
+    "title": "The Final Frontier: A Journey Through Production Deployment & CI/CD",
+    "description": "The final phase of the LoveCppDSA project was its most challenging and transformative: taking the application from a local development environment to a live, production-ready product on the internet. This section chronicles the developer's hands-on journey through containerization, cloud infrastructure, and full automation, a critical skill set that distinguishes a portfolio project from a professional-grade system."
+  }
+}
